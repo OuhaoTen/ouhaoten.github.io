@@ -8,6 +8,7 @@ buildDrafts: false
 buildFuture: false
 buildExpired: false
 
+
 minify:
   disableXML: true
   minifyOutput: true
@@ -16,7 +17,7 @@ params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
   title: Co'Log
   description: "Learning notes about Recommendation and Autonomous driving"
-  keywords: [Blog, Portfolio, PaperMod]
+  keywords: [Blog, Learning notes, Recommendation, Autonomous driving]
   author: ["Coldeye", "OuhaoTen"]
   images: ["<link or path of image for opengraph, twitter-cards>"]
   DateFormat: "January 2, 2006"
@@ -85,9 +86,9 @@ params:
 
   analytics:
     google:
-      SiteVerificationTag: "QnVm3Eo0s_tKt_sJhWHIQp5o377yfh4DJRRRXA5p5Tw"
+      SiteVerificationTag: "G-8HN6RSNM2B"
     bing:
-      SiteVerificationTag: "0A53450D60EE95103C2117D5737EA0C7"
+      SiteVerificationTag: ""
     yandex:
       SiteVerificationTag: "XYZabc"
 
