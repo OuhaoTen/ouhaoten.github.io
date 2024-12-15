@@ -1,0 +1,22 @@
+{{- $scratch := newScratch }}
+
+{{- if not .Date.IsZero -}}
+  {{- $scratch.Add "meta" (slice (printf "<span title='%s'>Date: %s" (.Date) (.Date | time.Format "January 2, 2006"))) }}
+{{- end }}
+
+{{- if .Param "ShowReadingTime" -}}
+  {{- $readingTime := default 5 .ReadingTime }}  <!-- 设置默认阅读时间 -->
+  {{- $scratch.Add "meta" (slice (printf "Reading Time: %d min" $readingTime)) }}
+{{- end }}
+
+{{- if not (.Param "hideAuthor") -}}
+  {{- with (partial "author.html" .) }}
+    {{- $scratch.Add "meta" (slice (printf "Author: %s" .)) }}
+  {{- end }}
+{{- end }}
+
+
+{{- with ($scratch.Get "meta") }}
+  {{- delimit . " | " | safeHTML -}}
+{{- end -}}
+
