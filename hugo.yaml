@@ -1,5 +1,5 @@
 baseURL: "https://ouhaoten.github.io"
-title: Co's Blog
+title: Co'Log
 paginate: 5
 theme: PaperMod
 
@@ -14,7 +14,7 @@ minify:
 
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
-  title: Co's Blog
+  title: Co'Log
   description: "Learning notes about Recommendation and Autonomous driving"
   keywords: [Blog, Portfolio, PaperMod]
   author: ["Coldeye", "OuhaoTen"]
@@ -49,7 +49,7 @@ params:
     safari_pinned_tab: "/favicon-32x32.png"
 
   label:
-    text: "Co's Blog"
+    text: "Co'Log"
     icon: /apple-touch-icon.png
     iconHeight: 35
 
