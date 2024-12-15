@@ -162,9 +162,5 @@ outputs:
     - RSS
     - JSON # necessary for search
 
-disableKinds:
-  - rss
-  
-  
 
 
