@@ -26,15 +26,15 @@ params:
   disableThemeToggle: false
 
   ShowReadingTime: true
-  ShowShareButtons: False
+  ShowShareButtons: true
   ShowPostNavLinks: true
   ShowBreadCrumbs: false
   ShowCodeCopyButtons: true
   ShowWordCount: true
   ShowRssButtonInSectionTermList: true
   UseHugoToc: true
-  disableSpecial1stPost: false
-  disableScrollToTop: true
+  disableSpecial1stPost: true
+  disableScrollToTop: false
   comments: true
   hidemeta: false
   hideSummary: false

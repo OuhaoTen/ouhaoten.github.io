@@ -8,7 +8,19 @@
 {{- end }}
 
 {{- /* Title */}}
-<title>{{ if .IsHome }}{{ else }}{{ if .Title }}{{ .Title }} | {{ end }}{{ end }}{{ site.Title }}</title>
+<title>
+  {{- if .IsHome -}}
+    Home | {{ .Site.Title }}
+  {{- else if .Params.hide_site_title -}}
+    {{ .Page.Title }}
+  {{- else if .Page.Title -}}
+    {{ .Page.Title }} | {{ .Site.Title }}
+  {{- else -}}
+    {{ .Site.Title }}
+  {{- end -}}
+</title>
+
+
 
 {{- /* Meta */}}
 {{- if .IsHome }}

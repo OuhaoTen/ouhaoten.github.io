@@ -2,7 +2,7 @@
 date: '2024-12-15T11:42:16+08:00'
 title: 'OmniDrive 论文解读'
 author: ["OuhaoTen"]
-tags: ["自动驾驶","MLLM"]
+tags: ["Autonomous driving","MLLM"]
 ---
 
 # 一.论文总览
